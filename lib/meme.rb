@@ -45,6 +45,7 @@ class Meme
   GENERATORS['P_OAK']             = [24321,  'Professor-Oak']
   GENERATORS['OBAMA']             = [1332,   'Obama-']
   GENERATORS['SPARTA']            = [1013,   'sparta']
+  GENERATORS['TOWNCRIER']         = [434537, 'Towncrier']
 
   ##
   # Interface for the executable
