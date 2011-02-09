@@ -61,6 +61,7 @@ class Meme
     meme.paste link
 
     puts link
+    link
   end
 
   ##
