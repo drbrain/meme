@@ -24,17 +24,6 @@ class Meme
   USER_AGENT = "meme/#{VERSION} Ruby/#{RUBY_VERSION}"
 
   ##
-  # Looks up generator name
-
-  def GENERATORS.match(name)
-    # TODO  meme Y U NO DEMETAPHONE?
-    return self[name] if has_key? name
-    matcher = Regexp.new(name, Regexp::IGNORECASE)
-    _, generator = find { |k,v| matcher =~ k || v.grep(matcher).any? }
-    generator || self[name] # raises the error if generator is nil
-  end
-
-  ##
   # We have some generators up-in-here
 
   GENERATORS = Hash.new do |_, k|
@@ -57,6 +46,17 @@ class Meme
   GENERATORS['OBAMA']             = [1332,   'Obama-']
   GENERATORS['SPARTA']            = [1013,   'sparta']
   GENERATORS['TOWNCRIER']         = [434537, 'Towncrier']
+
+  ##
+  # Looks up generator name
+
+  def GENERATORS.match(name)
+    # TODO  meme Y U NO DEMETAPHONE?
+    return self[name] if has_key? name
+    matcher = Regexp.new(name, Regexp::IGNORECASE)
+    _, generator = find { |k,v| matcher =~ k || v.grep(matcher).any? }
+    generator || self[name] # raises the error if generator is nil
+  end
 
   ##
   # Interface for the executable
