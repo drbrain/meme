@@ -30,9 +30,21 @@ class Meme
     raise Error, "unknown generator #{k}"
   end
 
-  GENERATORS['Y_U_NO']        = [165241, 'Y-U-NO', 'Y U NO']
-  GENERATORS['B_FROG']        = [1211,   'Foul-Bachelorette-Frog']
-  GENERATORS['PHILOSORAPTOR'] = [984,    'Philosoraptor']
+  GENERATORS['Y_U_NO']            = [165241, 'Y-U-NO', 'Y U NO']
+  GENERATORS['B_FROG']            = [1211,   'Foul-Bachelorette-Frog']
+  GENERATORS['B_FROG2']           = [1045,   'Foul-Bachelor-Frog']
+  GENERATORS['PHILOSORAPTOR']     = [984,    'Philosoraptor']
+  GENERATORS['I_WOLF']            = [926,    'Insanity-Wolf']
+  GENERATORS['G_GRANDPA']         = [185650, 'Grumpy-Grandpa']
+  GENERATORS['S_AWKWARD_PENGUIN'] = [983,    'Socially-Awkward-Penguin']
+  GENERATORS['A_DOG']             = [940,    'Advice-Dog']
+  GENERATORS['J_DUCREUX']         = [1356,   'Joseph-Ducreux']
+  GENERATORS['XZIBIT']            = [3114,   'XZIBIT']
+  GENERATORS['TROLLFACE']         = [1030,   'Troll-Face']
+  GENERATORS['A_DODSON']          = [106375, 'Antoine-Dodson']
+  GENERATORS['P_OAK']             = [24321,  'Professor-Oak']
+  GENERATORS['OBAMA']             = [1332,   'Obama-']
+  GENERATORS['SPARTA']            = [1013,   'sparta']
 
   ##
   # Interface for the executable
