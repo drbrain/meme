@@ -14,7 +14,13 @@ Generate meme images using http://memegenerator.net!  Save yourself some time!
 
 == SYNOPSIS:
 
-  meme Y-U-NO 'write tests?'
+Generate a Y U NO meme:
+
+  $ meme Y_U_NO 'write tests?'
+
+See a list of available generators
+
+  $ meme --list
 
 You can also drive it like an API.
 
