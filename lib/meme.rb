@@ -24,6 +24,17 @@ class Meme
   USER_AGENT = "meme/#{VERSION} Ruby/#{RUBY_VERSION}"
 
   ##
+  # Looks up generator name
+
+  def GENERATORS.match(name)
+    # TODO  meme Y U NO DEMETAPHONE?
+    return self[name] if has_key? name
+    matcher = Regexp.new(name, Regexp::IGNORECASE)
+    _, generator = find { |k,v| matcher =~ k || v.grep(matcher).any? }
+    generator || self[name] # raises the error if generator is nil
+  end
+
+  ##
   # We have some generators up-in-here
 
   GENERATORS = Hash.new do |_, k|
@@ -66,7 +77,7 @@ class Meme
     line1     = ARGV.shift
     line2     = ARGV.shift
 
-    abort "#{$0} GENERATOR LINE [LINE]" unless line1
+    abort "#{$0} [GENERATOR|--list] LINE [LINE]" unless line1
 
     meme = new generator
     link = meme.generate line1, line2
@@ -81,7 +92,7 @@ class Meme
   # Generates links for +generator+
 
   def initialize generator
-    @template_id, @generator_name, @default_line = GENERATORS[generator]
+    @template_id, @generator_name, @default_line = GENERATORS.match generator
   end
 
   ##
