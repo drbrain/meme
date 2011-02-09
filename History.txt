@@ -1,6 +1,12 @@
-=== 1.0.0 / 2011-02-08
+=== 1.1 / 2011-02-09
 
-* 1 major enhancement
+* Minor enhancements
+  * Added 13 new templates.  Pull Request #4 by Josep M. Bach.
+  * Meme::run now returns the link.  Pull Request #2 by Josep M. Bach.
+  * Better template lookup.  Patch by James Tucker.
 
+=== 1.0 / 2011-02-08
+
+* Major enhancements
   * Birthday!
 

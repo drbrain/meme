@@ -1,4 +1,4 @@
-= meme
+= meme_generator
 
 * http://github.com/drbrain/meme
 * http://docs.seattlerb.org/meme_generator
