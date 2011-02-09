@@ -1,7 +1,7 @@
 = meme
 
 * http://github.com/drbrain/meme
-* http://docs.seattlerb.org/meme
+* http://docs.seattlerb.org/meme_generator
 
 == DESCRIPTION:
 
@@ -25,7 +25,7 @@ You can also drive it like an API.
 
 == INSTALL:
 
-  gem install meme
+  gem install meme_generator
 
 == DEVELOPERS:
 
