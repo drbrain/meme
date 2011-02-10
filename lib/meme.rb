@@ -138,10 +138,18 @@ class Meme
   end
 
   ##
-  # Puts +link+ in your clipboard, if you're on OS X, that is.
+  # Tries to find clipboard copy executable and if found puts +link+ in your
+  # clipboard.
 
   def paste link
-    IO.popen 'pbcopy', 'w' do |io| io.write link end
+    clipboard = %w{
+      /usr/bin/pbcopy
+      /usr/bin/xclip
+    }.find { |path| File.exist? path }
+
+    if clipboard
+      IO.popen clipboard, 'w' do |io| io.write link end
+    end
   end
 
 end
