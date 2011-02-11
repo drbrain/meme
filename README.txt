@@ -9,7 +9,7 @@ Generate meme images using http://memegenerator.net!  Save yourself some time!
 
 == FEATURES/PROBLEMS:
 
-* Only has a static list of sixteen meme images
+* Features many popular meme pictures
 * No tests
 
 == SYNOPSIS:

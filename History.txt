@@ -1,3 +1,9 @@
+=== 1.2 / 2011-02-11
+
+* Minor enhancements
+  * Added Hipster mermain.  Pull Request #6 by Josep M. Bach.
+  * Support xclip on linux.  Pull Request #5 by Matthew M. Boedicker.
+
 === 1.1 / 2011-02-09
 
 * Minor enhancements
