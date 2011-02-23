@@ -16,7 +16,7 @@ class Meme
   ##
   # Every meme generator needs a version
 
-  VERSION = '1.2'
+  VERSION = '1.2.1'
 
   ##
   # For statistics!
@@ -87,6 +87,8 @@ class Meme
 
     puts link
     link
+  rescue Exception => e
+    abort "ERROR: #{e.message} (#{e.class})"
   end
 
   ##
@@ -111,7 +113,7 @@ class Meme
       line1 = @default_line
     end
 
-    raise Error, "must supply both lines for #{generator_name}" unless line1
+    raise Error, "two lines are required for #{@generator_name}" unless line1
 
     Net::HTTP.start url.host do |http|
       post = Net::HTTP::Post.new url.path

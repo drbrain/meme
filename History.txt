@@ -1,3 +1,9 @@
+=== 1.2.1 / 2011-02-22
+
+* Bug Fix
+  * A proper error is now printed (instead of crashing) when `meme` is run
+    without both lines.  Bug #7 by Trevor Hartman.
+
 === 1.2 / 2011-02-11
 
 * Minor enhancements
