@@ -16,7 +16,7 @@ class Meme
   ##
   # Every meme generator needs a version
 
-  VERSION = '1.2.1'
+  VERSION = '1.2.2'
 
   ##
   # For statistics!
@@ -87,6 +87,10 @@ class Meme
 
     puts link
     link
+  rescue Interrupt
+    exit
+  rescue SystemExit
+    raise
   rescue Exception => e
     abort "ERROR: #{e.message} (#{e.class})"
   end

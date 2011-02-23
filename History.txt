@@ -1,3 +1,8 @@
+=== 1.2.2 / 2011-02-22
+
+* Bug Fix
+  * Don't print ERROR when we're exiting normally.
+
 === 1.2.1 / 2011-02-22
 
 * Bug Fix
