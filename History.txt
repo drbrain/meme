@@ -1,3 +1,8 @@
+=== FIXME / FIXME
+
+* Minor enhancements
+  * Added Scumbag Steve meme.
+
 === 1.2.2 / 2011-02-22
 
 * Bug Fix

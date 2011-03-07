@@ -47,6 +47,7 @@ class Meme
   GENERATORS['SPARTA']            = [1013,   'sparta']
   GENERATORS['TOWNCRIER']         = [434537, 'Towncrier']
   GENERATORS['H_MERMAID']         = [405224, 'Hipster-Mermaid']
+  GENERATORS['SCUMBAG']           = [364688, 'Scumbag-Steve']
 
   ##
   # Looks up generator name
