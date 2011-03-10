@@ -2,6 +2,7 @@
 
 * Minor enhancements
   * Added Scumbag Steve meme.
+  * meme > foo.jpg will download image.
 
 === 1.2.2 / 2011-02-22
 

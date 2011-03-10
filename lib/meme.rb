@@ -86,7 +86,11 @@ class Meme
 
     meme.paste link
 
-    puts link
+    if $stdout.tty?
+      puts link
+    else
+      puts meme.fetch link
+    end
     link
   rescue Interrupt
     exit
@@ -142,6 +146,19 @@ class Meme
 
     doc = Nokogiri.HTML res.body
     doc.css("a[href=\"#{location}\"] img").first['src']
+  end
+
+  def fetch link
+    url = URI.parse link
+    res = nil
+
+    Net::HTTP.start url.host do |http|
+      get = Net::HTTP::Get.new url.request_uri
+      get['User-Agent'] = USER_AGENT
+
+      res = http.request get
+    end
+    res.body
   end
 
   ##
