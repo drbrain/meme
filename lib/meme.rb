@@ -30,6 +30,8 @@ class Meme
     raise Error, "unknown generator #{k}"
   end
 
+  # keep generators in alphabetical order
+
   GENERATORS['A_DODSON']          = [106375, 'Antoine-Dodson']
   GENERATORS['A_DOG']             = [940,    'Advice-Dog']
   GENERATORS['BUTTHURT_DWELLER']  = [1438, 'Butthurt-Dweller']
@@ -51,6 +53,8 @@ class Meme
   GENERATORS['TROLLFACE']         = [1030,   'Troll-Face']
   GENERATORS['XZIBIT']            = [3114,   'XZIBIT']
   GENERATORS['Y_U_NO']            = [165241, 'Y-U-NO', 'Y U NO']
+
+  # keep generators in alphabetical order
 
   ##
   # Looks up generator name
