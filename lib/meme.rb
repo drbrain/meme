@@ -50,6 +50,7 @@ class Meme
   GENERATORS['H_MERMAID']         = [405224, 'Hipster-Mermaid']
   GENERATORS['SCUMBAG']           = [364688, 'Scumbag-Steve']
   GENERATORS['I_DONT_ALWAYS']     = [38926,  'The-Most-Interesting-Man-in-the-World']
+  GENERATORS['BUTTHURT_DWELLER']  = [1438, 'Butthurt-Dweller']
 
   ##
   # Looks up generator name
