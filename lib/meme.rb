@@ -49,6 +49,7 @@ class Meme
   GENERATORS['SCUMBAG']           = [364688, 'Scumbag-Steve']
   GENERATORS['SPARTA']            = [1013,   'sparta']
   GENERATORS['S_AWKWARD_PENGUIN'] = [983,    'Socially-Awkward-Penguin']
+  GENERATORS['SWEDISH_CHEF']      = [186651, 'Swedish-Chef']
   GENERATORS['TOWNCRIER']         = [434537, 'Towncrier']
   GENERATORS['TROLLFACE']         = [1030,   'Troll-Face']
   GENERATORS['XZIBIT']            = [3114,   'XZIBIT']
