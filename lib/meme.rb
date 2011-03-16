@@ -16,7 +16,7 @@ class Meme
   ##
   # Every meme generator needs a version
 
-  VERSION = '1.4'
+  VERSION = '1.5'
 
   ##
   # For statistics!
