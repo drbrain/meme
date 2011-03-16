@@ -52,6 +52,7 @@ class Meme
   GENERATORS['SWEDISH_CHEF']      = [186651, 'Swedish-Chef']
   GENERATORS['TOWNCRIER']         = [434537, 'Towncrier']
   GENERATORS['TROLLFACE']         = [1030,   'Troll-Face']
+  GENERATORS['US_POINT']          = [131083,   'Uncle-Sam-Point']
   GENERATORS['XZIBIT']            = [3114,   'XZIBIT']
   GENERATORS['Y_U_NO']            = [165241, 'Y-U-NO', 'Y U NO']
 
