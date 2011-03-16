@@ -68,7 +68,7 @@ class Meme
   # Looks up generator name
 
   def GENERATORS.match(name)
-    # TODO  meme Y U NO DEMETAPHONE?
+    # TODO meme Y U NO DEMETAPHONE?
     return self[name] if has_key? name
     matcher = Regexp.new(name, Regexp::IGNORECASE)
     _, generator = find { |k,v| matcher =~ k || v.grep(matcher).any? }
