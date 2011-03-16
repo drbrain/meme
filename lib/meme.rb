@@ -77,8 +77,8 @@ class Meme
     if generator == '--list' then
       width = GENERATORS.keys.map { |command| command.length }.max
 
-      GENERATORS.each do |command, (id, name, _)|
-        puts "%-*s    %s" % [width, command, name]
+      GENERATORS.sort.each do |command, (id, name, _)|
+        puts "%-*s  %s" % [width, command, name]
       end
 
       exit

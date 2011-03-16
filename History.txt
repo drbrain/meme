@@ -1,3 +1,8 @@
+=== 1.6 / ??
+
+* Minor enhancement
+  * `meme --list` is now sorted.
+
 === 1.5 / 2011-03-16
 
 * Minor enhancement
