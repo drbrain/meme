@@ -34,6 +34,7 @@ class Meme
 
   GENERATORS['A_DODSON']          = [106375, 'Antoine-Dodson']
   GENERATORS['A_DOG']             = [940,    'Advice-Dog']
+  GENERATORS['ANTEATER']          = [41191,    'anteater']
   GENERATORS['BUTTHURT_DWELLER']  = [1438, 'Butthurt-Dweller']
   GENERATORS['B_FROG']            = [1211,   'Foul-Bachelorette-Frog']
   GENERATORS['B_FROG2']           = [1045,   'Foul-Bachelor-Frog']
