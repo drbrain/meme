@@ -47,6 +47,7 @@ class Meme
   GENERATORS['J_DUCREUX']         = [1356,   'Joseph-Ducreux']
   GENERATORS['MINECRAFT']         = [122309,   'Minecraft']
   GENERATORS['OBAMA']             = [1332,   'Obama-']
+  GENERATORS['O-RLY-OWL']         = [117041, 'O-RLY-OWL','ORLY???']
   GENERATORS['PHILOSORAPTOR']     = [984,    'Philosoraptor']
   GENERATORS['P_OAK']             = [24321,  'Professor-Oak']
   GENERATORS['SCUMBAG']           = [364688, 'Scumbag-Steve']
