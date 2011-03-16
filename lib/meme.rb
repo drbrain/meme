@@ -39,6 +39,7 @@ class Meme
   GENERATORS['B_FROG']            = [1211,   'Foul-Bachelorette-Frog']
   GENERATORS['B_FROG2']           = [1045,   'Foul-Bachelor-Frog']
   GENERATORS['C_WOLF']            = [931,    'Courage-Wolf']
+  GENERATORS['CREEPER']           = [173501,   'Creeper']
   GENERATORS['G_GRANDPA']         = [185650, 'Grumpy-Grandpa']
   GENERATORS['H_MERMAID']         = [405224, 'Hipster-Mermaid']
   GENERATORS['I_DONT_ALWAYS']     = [38926,  'The-Most-Interesting-Man-in-the-World']
