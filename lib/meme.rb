@@ -44,6 +44,7 @@ class Meme
   GENERATORS['F_FRY']             = [84688,  'Futurama-Fry']
   GENERATORS['G_GRANDPA']         = [185650, 'Grumpy-Grandpa']
   GENERATORS['H_MERMAID']         = [405224, 'Hipster-Mermaid']
+  GENERATORS['A_FATHER']          = [1436,   'High-Expectations-Asian-Father']
   GENERATORS['I_DONT_ALWAYS']     = [38926,  'The-Most-Interesting-Man-in-the-World']
   GENERATORS['I_WOLF']            = [926,    'Insanity-Wolf']
   GENERATORS['INCEPTION']         = [107949, 'Inception']
