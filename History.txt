@@ -6,6 +6,8 @@
   * Added Anteater.  Pull Request #14 by Aaron Patterson.
   * Added Minecraft and Creeper.  Pull Request #15 by Aaron Patterson.
   * Added Unicorn Boy.  Pull Request #19 by Aaron Patterson.
+  * GENERATORS hash additions are now aligned.  Pull Request #16 by Dean
+    Strelau.
 
 === 1.5 / 2011-03-16
 
