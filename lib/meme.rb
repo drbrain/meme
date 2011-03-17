@@ -41,6 +41,7 @@ class Meme
   GENERATORS['COOL_STORY_HOUSE']  = [16948,  'cool-story-bro-house']
   GENERATORS['CREEPER']           = [173501, 'Minecraft-Creeper']
   GENERATORS['C_WOLF']            = [931,    'Courage-Wolf']
+  GENERATORS['F_FRY']             = [84688,  'Futurama-Fry']
   GENERATORS['G_GRANDPA']         = [185650, 'Grumpy-Grandpa']
   GENERATORS['H_MERMAID']         = [405224, 'Hipster-Mermaid']
   GENERATORS['I_DONT_ALWAYS']     = [38926,  'The-Most-Interesting-Man-in-the-World']
