@@ -38,6 +38,7 @@ class Meme
   GENERATORS['BUTTHURT_DWELLER']  = [1438,   'Butthurt-Dweller']
   GENERATORS['B_FROG']            = [1211,   'Foul-Bachelorette-Frog']
   GENERATORS['B_FROG2']           = [1045,   'Foul-Bachelor-Frog']
+  GENERATORS['COOL_STORY_HOUSE']  = [16948,  'cool-story-bro-house']
   GENERATORS['CREEPER']           = [173501, 'Minecraft-Creeper']
   GENERATORS['C_WOLF']            = [931,    'Courage-Wolf']
   GENERATORS['G_GRANDPA']         = [185650, 'Grumpy-Grandpa']
@@ -45,6 +46,7 @@ class Meme
   GENERATORS['I_DONT_ALWAYS']     = [38926,  'The-Most-Interesting-Man-in-the-World']
   GENERATORS['I_WOLF']            = [926,    'Insanity-Wolf']
   GENERATORS['J_DUCREUX']         = [1356,   'Joseph-Ducreux']
+  GENERATORS['KEANU']             = [47718,  'Keanu-reeves']
   GENERATORS['MINECRAFT']         = [122309, 'Minecraft']
   GENERATORS['O-RLY-OWL']         = [117041, 'O-RLY-OWL', 'ORLY???']
   GENERATORS['OBAMA']             = [1332,   'Obama-']
@@ -59,6 +61,7 @@ class Meme
   GENERATORS['TROLLFACE']         = [1030,   'Troll-Face']
   GENERATORS['UNICORN_BOY']       = [57022,  'unicorn-boy']
   GENERATORS['US_POINT']          = [131083, 'Uncle-Sam-Point', 'I WANT YOU']
+  GENERATORS['V_BABY']            = [11140,  'Victory-Baby']
   GENERATORS['XZIBIT']            = [3114,   'XZIBIT']
   GENERATORS['Y_U_NO']            = [165241, 'Y-U-NO', 'Y U NO']
 
