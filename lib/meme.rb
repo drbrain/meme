@@ -58,7 +58,7 @@ class Meme
   GENERATORS['TOWNCRIER']         = [434537, 'Towncrier']
   GENERATORS['TROLLFACE']         = [1030,   'Troll-Face']
   GENERATORS['UNICORN_BOY']       = [57022,  'unicorn-boy']
-  GENERATORS['US_POINT']          = [131083, 'Uncle-Sam-Point']
+  GENERATORS['US_POINT']          = [131083, 'Uncle-Sam-Point', 'I WANT YOU']
   GENERATORS['XZIBIT']            = [3114,   'XZIBIT']
   GENERATORS['Y_U_NO']            = [165241, 'Y-U-NO', 'Y U NO']
 
