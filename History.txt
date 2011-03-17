@@ -8,6 +8,10 @@
   * Added Unicorn Boy.  Pull Request #19 by Aaron Patterson.
   * GENERATORS hash additions are now aligned.  Pull Request #16 by Dean
     Strelau.
+  * Added Futurama Fry.  Pull Request #16 by Dean Strelau.
+  * Added Cool Story House.  Pull Request #16 by Dean Strelau.
+  * Added Keanu.  Pull Request #16 by Dean Strelau.
+  * Added Victory Baby.  Pull Request #16 by Dean Strelau.
 
 === 1.5 / 2011-03-16
 
