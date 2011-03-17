@@ -10,8 +10,8 @@
   * Added Inception.  Pull Request #18 by Arthur Chiu.
   * Added Keanu.  Pull Request #16 by Dean Strelau.
   * Added Minecraft.  Pull Request #15 by Aaron Patterson.
-  * Added Spiderman.  Pull Request #18 by Arthur Chiu.
   * Added ORLY Owl.  Pull Request #18 by Arthur Chiu.
+  * Added Spiderman.  Pull Request #18 by Arthur Chiu.
   * Added Uncle Sam Points.  Pull Request #13 by Aaron Patteron.
   * Added Unicorn Boy.  Pull Request #19 by Aaron Patterson.
   * Added Victory Baby.  Pull Request #16 by Dean Strelau.
