@@ -32,14 +32,17 @@ class Meme
 
   # keep generators in alphabetical order
 
+  GENERATORS['ANTEATER']          = [41191,  'anteater']
   GENERATORS['A_DODSON']          = [106375, 'Antoine-Dodson']
   GENERATORS['A_DOG']             = [940,    'Advice-Dog']
-  GENERATORS['ANTEATER']          = [41191,    'anteater']
-  GENERATORS['BUTTHURT_DWELLER']  = [1438, 'Butthurt-Dweller']
+  GENERATORS['A_FATHER']          = [1436,   'High-Expectations-Asian-Father']
+  GENERATORS['BUTTHURT_DWELLER']  = [1438,   'Butthurt-Dweller']
   GENERATORS['B_FROG']            = [1211,   'Foul-Bachelorette-Frog']
   GENERATORS['B_FROG2']           = [1045,   'Foul-Bachelor-Frog']
+  GENERATORS['COOL_STORY_HOUSE']  = [16948,  'cool-story-bro-house']
+  GENERATORS['CREEPER']           = [173501, 'Minecraft-Creeper']
   GENERATORS['C_WOLF']            = [931,    'Courage-Wolf']
-  GENERATORS['CREEPER']           = [173501,   'Minecraft-Creeper']
+  GENERATORS['F_FRY']             = [84688,  'Futurama-Fry']
   GENERATORS['G_GRANDPA']         = [185650, 'Grumpy-Grandpa']
   GENERATORS['H_MERMAID']         = [405224, 'Hipster-Mermaid']
   GENERATORS['A_FATHER']          = [1436,   'High-Expectations-Asian-Father']
@@ -47,7 +50,9 @@ class Meme
   GENERATORS['I_WOLF']            = [926,    'Insanity-Wolf']
   GENERATORS['INCEPTION']         = [107949, 'Inception']
   GENERATORS['J_DUCREUX']         = [1356,   'Joseph-Ducreux']
-  GENERATORS['MINECRAFT']         = [122309,   'Minecraft']
+  GENERATORS['KEANU']             = [47718,  'Keanu-reeves']
+  GENERATORS['MINECRAFT']         = [122309, 'Minecraft']
+  GENERATORS['O-RLY-OWL']         = [117041, 'O-RLY-OWL', 'ORLY???']
   GENERATORS['OBAMA']             = [1332,   'Obama-']
   GENERATORS['O-RLY-OWL']         = [117041, 'O-RLY-OWL','ORLY???']
   GENERATORS['PHILOSORAPTOR']     = [984,    'Philosoraptor']
@@ -57,10 +62,12 @@ class Meme
   GENERATORS['SPIDERMAN']         = [1037,   'Question-Spiderman']
   GENERATORS['S_AWKWARD_PENGUIN'] = [983,    'Socially-Awkward-Penguin']
   GENERATORS['SWEDISH_CHEF']      = [186651, 'Swedish-Chef']
+  GENERATORS['S_AWKWARD_PENGUIN'] = [983,    'Socially-Awkward-Penguin']
   GENERATORS['TOWNCRIER']         = [434537, 'Towncrier']
   GENERATORS['TROLLFACE']         = [1030,   'Troll-Face']
   GENERATORS['UNICORN_BOY']       = [57022,  'unicorn-boy']
-  GENERATORS['US_POINT']          = [131083,   'Uncle-Sam-Point']
+  GENERATORS['US_POINT']          = [131083, 'Uncle-Sam-Point', 'I WANT YOU']
+  GENERATORS['V_BABY']            = [11140,  'Victory-Baby']
   GENERATORS['XZIBIT']            = [3114,   'XZIBIT']
   GENERATORS['Y_U_NO']            = [165241, 'Y-U-NO', 'Y U NO']
 
@@ -93,13 +100,10 @@ class Meme
       exit
     end
 
-    line1     = ARGV.shift
-    line2     = ARGV.shift
-
-    abort "#{$0} [GENERATOR|--list] LINE [LINE]" unless line1
+    abort "#{$0} [GENERATOR|--list] LINE [ADDITONAL_LINES]" if ARGV.empty?
 
     meme = new generator
-    link = meme.generate line1, line2
+    link = meme.generate *ARGV
 
     meme.paste link
 
@@ -129,26 +133,27 @@ class Meme
   # have to supply one line because the first line is defaulted for you.
   # Isn't that great?
 
-  def generate line1, line2 = nil
+  def generate *args
     url = URI.parse 'http://memegenerator.net/Instance/CreateOrEdit'
     res = nil
     location = nil
 
-    unless line2 then
-      line2 = line1
-      line1 = @default_line
-    end
+    # Put the default line in front unless theres more than 1 text input.
+    args.unshift(@default_line) unless args.size > 1
 
-    raise Error, "two lines are required for #{@generator_name}" unless line1
+    raise Error, "two lines are required for #{@generator_name}" unless args.size > 1
+
+    post_data = { 'templateType'  => 'AdviceDogSpinoff',
+                  'templateID'    => @template_id,
+                  'generatorName' => @generator_name }
+
+    # go through each argument and add it back into the post data as textN
+    (0..args.size).map {|num| post_data.merge! "text#{num}" => args[num] }
 
     Net::HTTP.start url.host do |http|
       post = Net::HTTP::Post.new url.path
       post['User-Agent'] = USER_AGENT
-      post.set_form_data('templateType'  => 'AdviceDogSpinoff',
-                         'text0'         => line1,
-                         'text1'         => line2,
-                         'templateID'    => @template_id,
-                         'generatorName' => @generator_name)
+      post.set_form_data post_data
 
       res = http.request post
 
