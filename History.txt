@@ -2,16 +2,17 @@
 
 * Minor enhancements
   * <tt>meme --list</tt> is now sorted.
-  * Added Uncle Sam Points.  Pull Request #13 by Aaron Patteron.
   * Added Anteater.  Pull Request #14 by Aaron Patterson.
-  * Added Minecraft and Creeper.  Pull Request #15 by Aaron Patterson.
+  * Added Cool Story House.  Pull Request #16 by Dean Strelau.
+  * Added Creeper.  Pull Request #15 by Aaron Patterson.
+  * Added Futurama Fry.  Pull Request #16 by Dean Strelau.
+  * Added Keanu.  Pull Request #16 by Dean Strelau.
+  * Added Minecraft.  Pull Request #15 by Aaron Patterson.
+  * Added Uncle Sam Points.  Pull Request #13 by Aaron Patteron.
   * Added Unicorn Boy.  Pull Request #19 by Aaron Patterson.
+  * Added Victory Baby.  Pull Request #16 by Dean Strelau.
   * GENERATORS hash additions are now aligned.  Pull Request #16 by Dean
     Strelau.
-  * Added Futurama Fry.  Pull Request #16 by Dean Strelau.
-  * Added Cool Story House.  Pull Request #16 by Dean Strelau.
-  * Added Keanu.  Pull Request #16 by Dean Strelau.
-  * Added Victory Baby.  Pull Request #16 by Dean Strelau.
 
 === 1.5 / 2011-03-16
 
