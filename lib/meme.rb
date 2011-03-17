@@ -32,44 +32,44 @@ class Meme
 
   # keep generators in alphabetical order
 
-  GENERATORS['ANTEATER']          = [41191,  'anteater']
-  GENERATORS['A_DODSON']          = [106375, 'Antoine-Dodson']
-  GENERATORS['A_DOG']             = [940,    'Advice-Dog']
-  GENERATORS['A_FATHER']          = [1436,   'High-Expectations-Asian-Father']
-  GENERATORS['BUTTHURT_DWELLER']  = [1438,   'Butthurt-Dweller']
-  GENERATORS['B_FROG']            = [1211,   'Foul-Bachelorette-Frog']
-  GENERATORS['B_FROG2']           = [1045,   'Foul-Bachelor-Frog']
-  GENERATORS['COOL_STORY_HOUSE']  = [16948,  'cool-story-bro-house']
-  GENERATORS['CREEPER']           = [173501, 'Minecraft-Creeper']
-  GENERATORS['C_WOLF']            = [931,    'Courage-Wolf']
-  GENERATORS['F_FRY']             = [84688,  'Futurama-Fry']
-  GENERATORS['G_GRANDPA']         = [185650, 'Grumpy-Grandpa']
-  GENERATORS['H_MERMAID']         = [405224, 'Hipster-Mermaid']
-  GENERATORS['A_FATHER']          = [1436,   'High-Expectations-Asian-Father']
-  GENERATORS['I_DONT_ALWAYS']     = [38926,  'The-Most-Interesting-Man-in-the-World']
-  GENERATORS['I_WOLF']            = [926,    'Insanity-Wolf']
-  GENERATORS['INCEPTION']         = [107949, 'Inception']
-  GENERATORS['J_DUCREUX']         = [1356,   'Joseph-Ducreux']
-  GENERATORS['KEANU']             = [47718,  'Keanu-reeves']
-  GENERATORS['MINECRAFT']         = [122309, 'Minecraft']
-  GENERATORS['O-RLY-OWL']         = [117041, 'O-RLY-OWL', 'ORLY???']
-  GENERATORS['OBAMA']             = [1332,   'Obama-']
-  GENERATORS['O-RLY-OWL']         = [117041, 'O-RLY-OWL','ORLY???']
-  GENERATORS['PHILOSORAPTOR']     = [984,    'Philosoraptor']
-  GENERATORS['P_OAK']             = [24321,  'Professor-Oak']
-  GENERATORS['SCUMBAG']           = [364688, 'Scumbag-Steve']
-  GENERATORS['SPARTA']            = [1013,   'sparta']
-  GENERATORS['SPIDERMAN']         = [1037,   'Question-Spiderman']
-  GENERATORS['S_AWKWARD_PENGUIN'] = [983,    'Socially-Awkward-Penguin']
-  GENERATORS['SWEDISH_CHEF']      = [186651, 'Swedish-Chef']
-  GENERATORS['S_AWKWARD_PENGUIN'] = [983,    'Socially-Awkward-Penguin']
-  GENERATORS['TOWNCRIER']         = [434537, 'Towncrier']
-  GENERATORS['TROLLFACE']         = [1030,   'Troll-Face']
-  GENERATORS['UNICORN_BOY']       = [57022,  'unicorn-boy']
-  GENERATORS['US_POINT']          = [131083, 'Uncle-Sam-Point', 'I WANT YOU']
-  GENERATORS['V_BABY']            = [11140,  'Victory-Baby']
-  GENERATORS['XZIBIT']            = [3114,   'XZIBIT']
-  GENERATORS['Y_U_NO']            = [165241, 'Y-U-NO', 'Y U NO']
+  GENERATORS['ANTEATER']          = [41191,  'AdviceDogSpinoff', 'anteater']
+  GENERATORS['A_DODSON']          = [106375, 'AdviceDogSpinoff', 'Antoine-Dodson']
+  GENERATORS['A_DOG']             = [940,    'AdviceDogSpinoff', 'Advice-Dog']
+  GENERATORS['A_FATHER']          = [1436,   'AdviceDogSpinoff', 'High-Expectations-Asian-Father']
+  GENERATORS['BUTTHURT_DWELLER']  = [1438,   'AdviceDogSpinoff', 'Butthurt-Dweller']
+  GENERATORS['B_FROG']            = [1211,   'AdviceDogSpinoff', 'Foul-Bachelorette-Frog']
+  GENERATORS['B_FROG2']           = [1045,   'AdviceDogSpinoff', 'Foul-Bachelor-Frog']
+  GENERATORS['COOL_STORY_HOUSE']  = [16948,  'AdviceDogSpinoff', 'cool-story-bro-house']
+  GENERATORS['CREEPER']           = [173501, 'AdviceDogSpinoff', 'Minecraft-Creeper']
+  GENERATORS['C_WOLF']            = [931,    'AdviceDogSpinoff', 'Courage-Wolf']
+  GENERATORS['F_FRY']             = [84688,  'AdviceDogSpinoff', 'Futurama-Fry']
+  GENERATORS['G_GRANDPA']         = [185650, 'AdviceDogSpinoff', 'Grumpy-Grandpa']
+  GENERATORS['H_MERMAID']         = [405224, 'AdviceDogSpinoff', 'Hipster-Mermaid']
+  GENERATORS['A_FATHER']          = [1436,   'AdviceDogSpinoff', 'High-Expectations-Asian-Father']
+  GENERATORS['I_DONT_ALWAYS']     = [38926,  'AdviceDogSpinoff', 'The-Most-Interesting-Man-in-the-World']
+  GENERATORS['I_WOLF']            = [926,    'AdviceDogSpinoff', 'Insanity-Wolf']
+  GENERATORS['INCEPTION']         = [107949, 'Vertical',         'Inception']
+  GENERATORS['J_DUCREUX']         = [1356,   'AdviceDogSpinoff', 'Joseph-Ducreux']
+  GENERATORS['KEANU']             = [47718,  'AdviceDogSpinoff', 'Keanu-reeves']
+  GENERATORS['MINECRAFT']         = [122309, 'AdviceDogSpinoff', 'Minecraft']
+  GENERATORS['O-RLY-OWL']         = [117041, 'AdviceDogSpinoff', 'O-RLY-OWL', 'ORLY???']
+  GENERATORS['OBAMA']             = [1332,   'AdviceDogSpinoff', 'Obama-']
+  GENERATORS['O-RLY-OWL']         = [117041, 'AdviceDogSpinoff', 'O-RLY-OWL','ORLY???']
+  GENERATORS['PHILOSORAPTOR']     = [984,    'AdviceDogSpinoff', 'Philosoraptor']
+  GENERATORS['P_OAK']             = [24321,  'AdviceDogSpinoff', 'Professor-Oak']
+  GENERATORS['SCUMBAG']           = [364688, 'AdviceDogSpinoff', 'Scumbag-Steve']
+  GENERATORS['SPARTA']            = [1013,   'AdviceDogSpinoff', 'sparta']
+  GENERATORS['SPIDERMAN']         = [1037,   'AdviceDogSpinoff', 'Question-Spiderman']
+  GENERATORS['S_AWKWARD_PENGUIN'] = [983,    'AdviceDogSpinoff', 'Socially-Awkward-Penguin']
+  GENERATORS['SWEDISH_CHEF']      = [186651, 'AdviceDogSpinoff', 'Swedish-Chef']
+  GENERATORS['S_AWKWARD_PENGUIN'] = [983,    'AdviceDogSpinoff', 'Socially-Awkward-Penguin']
+  GENERATORS['TOWNCRIER']         = [434537, 'AdviceDogSpinoff', 'Towncrier']
+  GENERATORS['TROLLFACE']         = [1030,   'AdviceDogSpinoff', 'Troll-Face']
+  GENERATORS['UNICORN_BOY']       = [57022,  'AdviceDogSpinoff', 'unicorn-boy']
+  GENERATORS['US_POINT']          = [131083, 'AdviceDogSpinoff', 'Uncle-Sam-Point', 'I WANT YOU']
+  GENERATORS['V_BABY']            = [11140,  'AdviceDogSpinoff', 'Victory-Baby']
+  GENERATORS['XZIBIT']            = [3114,   'AdviceDogSpinoff', 'XZIBIT']
+  GENERATORS['Y_U_NO']            = [165241, 'AdviceDogSpinoff', 'Y-U-NO', 'Y U NO']
 
   # keep generators in alphabetical order
 
@@ -125,7 +125,7 @@ class Meme
   # Generates links for +generator+
 
   def initialize generator
-    @template_id, @generator_name, @default_line = GENERATORS.match generator
+    @template_id, @template_type, @generator_name, @default_line = GENERATORS.match generator
   end
 
   ##
@@ -143,7 +143,7 @@ class Meme
 
     raise Error, "two lines are required for #{@generator_name}" unless args.size > 1
 
-    post_data = { 'templateType'  => 'AdviceDogSpinoff',
+    post_data = { 'templateType'  => @template_type,
                   'templateID'    => @template_id,
                   'generatorName' => @generator_name }
 
