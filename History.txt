@@ -5,6 +5,7 @@
   * Added Uncle Sam Points.  Pull Request #13 by Aaron Patteron.
   * Added Anteater.  Pull Request #14 by Aaron Patterson.
   * Added Minecraft and Creeper.  Pull Request #15 by Aaron Patterson.
+  * Added Unicorn Boy.  Pull Request #19 by Aaron Patterson.
 
 === 1.5 / 2011-03-16
 
