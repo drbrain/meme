@@ -1,4 +1,4 @@
-=== 1.6 / ??
+=== 1.6 / 2011-03-17
 
 * Minor enhancements
   * <tt>meme --list</tt> is now sorted.
