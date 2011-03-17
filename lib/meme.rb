@@ -52,6 +52,7 @@ class Meme
   GENERATORS['P_OAK']             = [24321,  'Professor-Oak']
   GENERATORS['SCUMBAG']           = [364688, 'Scumbag-Steve']
   GENERATORS['SPARTA']            = [1013,   'sparta']
+  GENERATORS['SPIDERMAN']         = [1037,   'Question-Spiderman']
   GENERATORS['S_AWKWARD_PENGUIN'] = [983,    'Socially-Awkward-Penguin']
   GENERATORS['SWEDISH_CHEF']      = [186651, 'Swedish-Chef']
   GENERATORS['TOWNCRIER']         = [434537, 'Towncrier']
