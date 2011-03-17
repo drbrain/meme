@@ -97,13 +97,10 @@ class Meme
       exit
     end
 
-    line1     = ARGV.shift
-    line2     = ARGV.shift
-
-    abort "#{$0} [GENERATOR|--list] LINE [LINE]" unless line1
+    abort "#{$0} [GENERATOR|--list] LINE [ADDITONAL_LINES]" if ARGV.empty?
 
     meme = new generator
-    link = meme.generate line1, line2
+    link = meme.generate *ARGV
 
     meme.paste link
 
@@ -133,26 +130,27 @@ class Meme
   # have to supply one line because the first line is defaulted for you.
   # Isn't that great?
 
-  def generate line1, line2 = nil
+  def generate *args
     url = URI.parse 'http://memegenerator.net/Instance/CreateOrEdit'
     res = nil
     location = nil
 
-    unless line2 then
-      line2 = line1
-      line1 = @default_line
-    end
+    # Put the default line in front unless theres more than 1 text input.
+    args.unshift(@default_line) unless args.size > 1
 
-    raise Error, "two lines are required for #{@generator_name}" unless line1
+    raise Error, "two lines are required for #{@generator_name}" unless args.size > 1
+
+    post_data = { 'templateType'  => 'AdviceDogSpinoff',
+                  'templateID'    => @template_id,
+                  'generatorName' => @generator_name }
+
+    # go through each argument and add it back into the post data as textN
+    (0..args.size).map {|num| post_data.merge! "text#{num}" => args[num] }
 
     Net::HTTP.start url.host do |http|
       post = Net::HTTP::Post.new url.path
       post['User-Agent'] = USER_AGENT
-      post.set_form_data('templateType'  => 'AdviceDogSpinoff',
-                         'text0'         => line1,
-                         'text1'         => line2,
-                         'templateID'    => @template_id,
-                         'generatorName' => @generator_name)
+      post.set_form_data post_data
 
       res = http.request post
 
