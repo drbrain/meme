@@ -46,6 +46,7 @@ class Meme
   GENERATORS['H_MERMAID']         = [405224, 'Hipster-Mermaid']
   GENERATORS['I_DONT_ALWAYS']     = [38926,  'The-Most-Interesting-Man-in-the-World']
   GENERATORS['I_WOLF']            = [926,    'Insanity-Wolf']
+  GENERATORS['INCEPTION']         = [107949, 'Inception']
   GENERATORS['J_DUCREUX']         = [1356,   'Joseph-Ducreux']
   GENERATORS['KEANU']             = [47718,  'Keanu-reeves']
   GENERATORS['MINECRAFT']         = [122309, 'Minecraft']
