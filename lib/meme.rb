@@ -16,7 +16,7 @@ class Meme
   ##
   # Every meme generator needs a version
 
-  VERSION = '1.7'
+  VERSION = '1.7.1'
 
   ##
   # For statistics!
@@ -35,8 +35,11 @@ class Meme
   #
   # These can accept up to two lines of text
 
-  def self.advice_dog name, id, template_name
-    GENERATORS[name] = [id, 'AdviceDogSpinoff', template_name]
+  def self.advice_dog name, id, template_name, first_line = nil
+    template = [id, 'AdviceDogSpinoff', template_name, first_line]
+    template.compact
+
+    GENERATORS[name] = template
   end
 
   ##
@@ -67,7 +70,7 @@ class Meme
   advice_dog 'J_DUCREUX',         1356,   'Joseph-Ducreux'
   advice_dog 'KEANU',             47718,  'Keanu-reeves'
   advice_dog 'MINECRAFT',         122309, 'Minecraft'
-  advice_dog 'O-RLY-OWL',         117041, 'O-RLY-OWL','ORLY???'
+  advice_dog 'O-RLY-OWL',         117041, 'O-RLY-OWL', 'ORLY???'
   advice_dog 'OBAMA',             1332,   'Obama-'
   advice_dog 'PHILOSORAPTOR',     984,    'Philosoraptor'
   advice_dog 'P_OAK',             24321,  'Professor-Oak'
