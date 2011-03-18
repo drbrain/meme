@@ -1,3 +1,9 @@
+=== 1.7 / 2011-03-18
+
+* Minor enhancement
+  * Inception now supports more than two lines.  Pull Request #20 by Arthur
+    Chiu.
+
 === 1.6 / 2011-03-17
 
 * Minor enhancements
