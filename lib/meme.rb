@@ -30,47 +30,61 @@ class Meme
     raise Error, "unknown generator #{k}"
   end
 
+  ##
+  # For creating advice-dog type meme images.
+  #
+  # These can accept up to two lines of text
+
+  def self.advice_dog name, id, template_name
+    GENERATORS[name] = [id, 'AdviceDogSpinoff', template_name]
+  end
+
+  ##
+  # For creating vertical type meme images
+  #
+  # These can accept multiple lines of text
+
+  def self.vertical name, id, template_name
+    GENERATORS[name] = [id, 'Vertical', template_name]
+  end
+
   # keep generators in alphabetical order
+  advice_dog 'ANTEATER',          41191,  'anteater'
+  advice_dog 'A_DODSON',          106375, 'Antoine-Dodson'
+  advice_dog 'A_DOG',             940,    'Advice-Dog'
+  advice_dog 'A_FATHER',          1436,   'High-Expectations-Asian-Father'
+  advice_dog 'BUTTHURT_DWELLER',  1438,   'Butthurt-Dweller'
+  advice_dog 'B_FROG',            1211,   'Foul-Bachelorette-Frog'
+  advice_dog 'B_FROG2',           1045,   'Foul-Bachelor-Frog'
+  advice_dog 'COOL_STORY_HOUSE',  16948,  'cool-story-bro-house'
+  advice_dog 'CREEPER',           173501, 'Minecraft-Creeper'
+  advice_dog 'C_WOLF',            931,    'Courage-Wolf'
+  advice_dog 'F_FRY',             84688,  'Futurama-Fry'
+  advice_dog 'G_GRANDPA',         185650, 'Grumpy-Grandpa'
+  advice_dog 'H_MERMAID',         405224, 'Hipster-Mermaid'
+  advice_dog 'I_DONT_ALWAYS',     38926,  'The-Most-Interesting-Man-in-the-World'
+  advice_dog 'I_WOLF',            926,    'Insanity-Wolf'
+  advice_dog 'J_DUCREUX',         1356,   'Joseph-Ducreux'
+  advice_dog 'KEANU',             47718,  'Keanu-reeves'
+  advice_dog 'MINECRAFT',         122309, 'Minecraft'
+  advice_dog 'O-RLY-OWL',         117041, 'O-RLY-OWL','ORLY???'
+  advice_dog 'OBAMA',             1332,   'Obama-'
+  advice_dog 'PHILOSORAPTOR',     984,    'Philosoraptor'
+  advice_dog 'P_OAK',             24321,  'Professor-Oak'
+  advice_dog 'SCUMBAG',           364688, 'Scumbag-Steve'
+  advice_dog 'SPARTA',            1013,   'sparta'
+  advice_dog 'SPIDERMAN',         1037,   'Question-Spiderman'
+  advice_dog 'SWEDISH_CHEF',      186651, 'Swedish-Chef'
+  advice_dog 'S_AWKWARD_PENGUIN', 983,    'Socially-Awkward-Penguin'
+  advice_dog 'TOWNCRIER',         434537, 'Towncrier'
+  advice_dog 'TROLLFACE',         1030,   'Troll-Face'
+  advice_dog 'UNICORN_BOY',       57022,  'unicorn-boy'
+  advice_dog 'US_POINT',          131083, 'Uncle-Sam-Point', 'I WANT YOU'
+  advice_dog 'V_BABY',            11140,  'Victory-Baby'
+  advice_dog 'XZIBIT',            3114,   'XZIBIT'
+  advice_dog 'Y_U_NO',            165241, 'Y-U-NO', 'Y U NO'
 
-  GENERATORS['ANTEATER']          = [41191,  'AdviceDogSpinoff', 'anteater']
-  GENERATORS['A_DODSON']          = [106375, 'AdviceDogSpinoff', 'Antoine-Dodson']
-  GENERATORS['A_DOG']             = [940,    'AdviceDogSpinoff', 'Advice-Dog']
-  GENERATORS['A_FATHER']          = [1436,   'AdviceDogSpinoff', 'High-Expectations-Asian-Father']
-  GENERATORS['BUTTHURT_DWELLER']  = [1438,   'AdviceDogSpinoff', 'Butthurt-Dweller']
-  GENERATORS['B_FROG']            = [1211,   'AdviceDogSpinoff', 'Foul-Bachelorette-Frog']
-  GENERATORS['B_FROG2']           = [1045,   'AdviceDogSpinoff', 'Foul-Bachelor-Frog']
-  GENERATORS['COOL_STORY_HOUSE']  = [16948,  'AdviceDogSpinoff', 'cool-story-bro-house']
-  GENERATORS['CREEPER']           = [173501, 'AdviceDogSpinoff', 'Minecraft-Creeper']
-  GENERATORS['C_WOLF']            = [931,    'AdviceDogSpinoff', 'Courage-Wolf']
-  GENERATORS['F_FRY']             = [84688,  'AdviceDogSpinoff', 'Futurama-Fry']
-  GENERATORS['G_GRANDPA']         = [185650, 'AdviceDogSpinoff', 'Grumpy-Grandpa']
-  GENERATORS['H_MERMAID']         = [405224, 'AdviceDogSpinoff', 'Hipster-Mermaid']
-  GENERATORS['A_FATHER']          = [1436,   'AdviceDogSpinoff', 'High-Expectations-Asian-Father']
-  GENERATORS['I_DONT_ALWAYS']     = [38926,  'AdviceDogSpinoff', 'The-Most-Interesting-Man-in-the-World']
-  GENERATORS['I_WOLF']            = [926,    'AdviceDogSpinoff', 'Insanity-Wolf']
-  GENERATORS['INCEPTION']         = [107949, 'Vertical',         'Inception']
-  GENERATORS['J_DUCREUX']         = [1356,   'AdviceDogSpinoff', 'Joseph-Ducreux']
-  GENERATORS['KEANU']             = [47718,  'AdviceDogSpinoff', 'Keanu-reeves']
-  GENERATORS['MINECRAFT']         = [122309, 'AdviceDogSpinoff', 'Minecraft']
-  GENERATORS['O-RLY-OWL']         = [117041, 'AdviceDogSpinoff', 'O-RLY-OWL', 'ORLY???']
-  GENERATORS['OBAMA']             = [1332,   'AdviceDogSpinoff', 'Obama-']
-  GENERATORS['O-RLY-OWL']         = [117041, 'AdviceDogSpinoff', 'O-RLY-OWL','ORLY???']
-  GENERATORS['PHILOSORAPTOR']     = [984,    'AdviceDogSpinoff', 'Philosoraptor']
-  GENERATORS['P_OAK']             = [24321,  'AdviceDogSpinoff', 'Professor-Oak']
-  GENERATORS['SCUMBAG']           = [364688, 'AdviceDogSpinoff', 'Scumbag-Steve']
-  GENERATORS['SPARTA']            = [1013,   'AdviceDogSpinoff', 'sparta']
-  GENERATORS['SPIDERMAN']         = [1037,   'AdviceDogSpinoff', 'Question-Spiderman']
-  GENERATORS['S_AWKWARD_PENGUIN'] = [983,    'AdviceDogSpinoff', 'Socially-Awkward-Penguin']
-  GENERATORS['SWEDISH_CHEF']      = [186651, 'AdviceDogSpinoff', 'Swedish-Chef']
-  GENERATORS['S_AWKWARD_PENGUIN'] = [983,    'AdviceDogSpinoff', 'Socially-Awkward-Penguin']
-  GENERATORS['TOWNCRIER']         = [434537, 'AdviceDogSpinoff', 'Towncrier']
-  GENERATORS['TROLLFACE']         = [1030,   'AdviceDogSpinoff', 'Troll-Face']
-  GENERATORS['UNICORN_BOY']       = [57022,  'AdviceDogSpinoff', 'unicorn-boy']
-  GENERATORS['US_POINT']          = [131083, 'AdviceDogSpinoff', 'Uncle-Sam-Point', 'I WANT YOU']
-  GENERATORS['V_BABY']            = [11140,  'AdviceDogSpinoff', 'Victory-Baby']
-  GENERATORS['XZIBIT']            = [3114,   'AdviceDogSpinoff', 'XZIBIT']
-  GENERATORS['Y_U_NO']            = [165241, 'AdviceDogSpinoff', 'Y-U-NO', 'Y U NO']
-
+  vertical 'INCEPTION', 107949, 'Inception'
   # keep generators in alphabetical order
 
   ##
