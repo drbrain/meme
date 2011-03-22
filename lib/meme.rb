@@ -75,6 +75,7 @@ class Meme
   advice_dog 'PHILOSORAPTOR',     984,    'Philosoraptor'
   advice_dog 'P_OAK',             24321,  'Professor-Oak'
   advice_dog 'SCUMBAG',           364688, 'Scumbag-Steve'
+  advice_dog 'SNOB',              2994,   'Snob'
   advice_dog 'SPARTA',            1013,   'sparta'
   advice_dog 'SPIDERMAN',         1037,   'Question-Spiderman'
   advice_dog 'SWEDISH_CHEF',      186651, 'Swedish-Chef'
