@@ -87,6 +87,7 @@ class Meme
   advice_dog 'XZIBIT',            3114,   'XZIBIT'
   advice_dog 'Y_U_NO',            165241, 'Y-U-NO', 'Y U NO'
 
+  vertical 'BATMAN',    148359, 'batman-panal-ryan'
   vertical 'INCEPTION', 107949, 'Inception'
   # keep generators in alphabetical order
 
