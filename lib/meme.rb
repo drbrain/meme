@@ -56,6 +56,7 @@ class Meme
   advice_dog 'A_DODSON',          106375, 'Antoine-Dodson'
   advice_dog 'A_DOG',             940,    'Advice-Dog'
   advice_dog 'A_FATHER',          1436,   'High-Expectations-Asian-Father'
+  advice_dog 'BEAR-GRYLLS',       89714,  'Bear-Grylls'
   advice_dog 'BUTTHURT_DWELLER',  1438,   'Butthurt-Dweller'
   advice_dog 'B_FROG',            1211,   'Foul-Bachelorette-Frog'
   advice_dog 'B_FROG2',           1045,   'Foul-Bachelor-Frog'
