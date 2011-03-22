@@ -92,6 +92,7 @@ class Meme
   vertical 'BATMAN',    148359, 'batman-panal-ryan'
   vertical 'INCEPTION', 107949, 'Inception'
   vertical 'NEO',       173419, 'Neo'
+  vertical 'THE_ROCK',  417195, 'The-Rock-driving'
 
   # keep generators in alphabetical order
 
