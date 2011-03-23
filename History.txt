@@ -2,6 +2,10 @@
 
 * Minor Enhancements
   * Added Bear Grylls.  Pull Request #25 by Lee Jarvis.
+  * Added Batman/Joker.  Pull Request #22 by Arthur Chiu.
+  * Added Neo/Agent Smith.  Pull Request #22 by Arthur Chiu.
+  * Added The Rock Driving.  Pull Request #22 by Arthur Chiu.
+  * Added Snob.  Pull Request #22 by Arthur Chiu.
 
 === 1.7.1 / 2011-03-18
 
