@@ -1,3 +1,8 @@
+=== 1.8 / 2011-03-22
+
+* Minor Enhancements
+  * Added Bear Grylls.  Pull Request #25 by Lee Jarvis.
+
 === 1.7.1 / 2011-03-18
 
 * Bug Fix
