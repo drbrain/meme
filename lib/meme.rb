@@ -163,8 +163,10 @@ class Meme
     res = nil
     location = nil
 
-    # Put the default line in front unless theres more than 1 text input.
-    args.unshift(@default_line) unless args.size > 1
+    # Prepend the default line if this meme has one and we only had 1 text input
+    if @default_line && args.size <= 1
+      args.unshift(@default_line)
+    end
 
     raise Error, "two lines are required for #{@generator_name}" unless args.size > 1
 
