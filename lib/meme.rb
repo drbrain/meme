@@ -212,6 +212,21 @@ class Meme
   # clipboard.
 
   def paste link
+    require 'pasteboard'
+
+    clipboard = Pasteboard.new
+
+    jpeg = fetch link
+
+    item = [
+      [Pasteboard::Type::JPEG,     jpeg],
+      [Pasteboard::Type::URL,      link],
+      [Pasteboard::Type::URL_NAME, link],
+      [Pasteboard::Type::UTF8,     link],
+    ]
+
+    clipboard.put item
+  rescue LoadError
     clipboard = %w{
       /usr/bin/pbcopy
       /usr/bin/xclip
