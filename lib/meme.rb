@@ -16,7 +16,7 @@ class Meme
   ##
   # Every meme generator needs a version
 
-  VERSION = '1.8'
+  VERSION = '1.9'
 
   ##
   # For statistics!
@@ -218,14 +218,7 @@ class Meme
 
     jpeg = fetch link
 
-    item = [
-      [Pasteboard::Type::JPEG,     jpeg],
-      [Pasteboard::Type::URL,      link],
-      [Pasteboard::Type::URL_NAME, link],
-      [Pasteboard::Type::UTF8,     link],
-    ]
-
-    clipboard.put item
+    clipboard.put_jpeg_url jpeg, link
   rescue LoadError
     clipboard = %w{
       /usr/bin/pbcopy
