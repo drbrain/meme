@@ -1,4 +1,4 @@
-=== 1.9 / ??
+=== 1.9 / 2010-03-28
 
 * Minor Enhancements
   * meme_generator will use pasteboard if it is installed.  This allows memes
