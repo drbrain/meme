@@ -5,6 +5,10 @@
     to easily be used in any OS X app which handles image data.
   * Added Challenge Accepted.  Pull Request #27 by Mark Turner.
 
+* Bug Fix
+  * Only add the default line when it is present.  Pull Request #26 by Matt
+    Margolis.
+
 === 1.8 / 2011-03-22
 
 * Minor Enhancements
