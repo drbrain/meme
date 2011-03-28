@@ -3,6 +3,7 @@
 * Minor Enhancements
   * meme_generator will use pasteboard if it is installed.  This allows memes
     to easily be used in any OS X app which handles image data.
+  * Added Challenge Accepted.  Pull Request #27 by Mark Turner.
 
 === 1.8 / 2011-03-22
 
