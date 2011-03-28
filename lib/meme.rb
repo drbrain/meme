@@ -164,11 +164,10 @@ class Meme
     location = nil
 
     # Prepend the default line if this meme has one and we only had 1 text input
-    if @default_line && args.size <= 1
-      args.unshift(@default_line)
-    end
+    args.unshift @default_line if @default_line and args.size <= 1
 
-    raise Error, "two lines are required for #{@generator_name}" unless args.size > 1
+    raise Error, "two lines are required for #{@generator_name}" unless
+      args.size > 1
 
     post_data = { 'templateType'  => @template_type,
                   'templateID'    => @template_id,
