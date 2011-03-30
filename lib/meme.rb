@@ -72,6 +72,7 @@ class Meme
   advice_dog 'J_DUCREUX',          1356,   'Joseph-Ducreux'
   advice_dog 'KEANU',              47718,  'Keanu-reeves'
   advice_dog 'MINECRAFT',          122309, 'Minecraft'
+  advice_dog 'MORE_BEAR',          33675,  'More-Bear'
   advice_dog 'O-RLY-OWL',          117041, 'O-RLY-OWL', 'ORLY???'
   advice_dog 'OBAMA',              1332,   'Obama-'
   advice_dog 'PHILOSORAPTOR',      984,    'Philosoraptor'
