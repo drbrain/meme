@@ -90,6 +90,7 @@ class Meme
   advice_dog 'V_BABY',             11140,  'Victory-Baby'
   advice_dog 'XZIBIT',             3114,   'XZIBIT'
   advice_dog 'Y_U_NO',             165241, 'Y-U-NO', 'Y U NO'
+  advice_dog 'YODA',               963,    'Advice-Yoda-Gives'
 
   vertical 'BATMAN',    148359, 'batman-panal-ryan'
   vertical 'INCEPTION', 107949, 'Inception'
