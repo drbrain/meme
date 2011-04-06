@@ -62,6 +62,7 @@ class Meme
   advice_dog 'B_FROG',             1211,   'Foul-Bachelorette-Frog'
   advice_dog 'B_FROG2',            1045,   'Foul-Bachelor-Frog'
   advice_dog 'BEIBER',             11809,  'Justin-Beiber'
+  advice_dog 'CATHY',              622381, 'AckCathy'
   advice_dog 'CHALLENGE_ACCEPTED', 275025, 'Challenge-Accepted'
   advice_dog 'COOL_STORY_HOUSE',   16948,  'cool-story-bro-house'
   advice_dog 'CREEPER',            173501, 'Minecraft-Creeper'
