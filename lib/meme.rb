@@ -82,6 +82,7 @@ class Meme
   advice_dog 'SNOB',               2994,   'Snob'
   advice_dog 'SPARTA',             1013,   'sparta'
   advice_dog 'SPIDERMAN',          1037,   'Question-Spiderman'
+  advice_dog 'SPILLMAN',           622133, 'Sassy-Spillman'
   advice_dog 'SWEDISH_CHEF',       186651, 'Swedish-Chef'
   advice_dog 'S_AWKWARD_PENGUIN',  983,    'Socially-Awkward-Penguin'
   advice_dog 'TOWNCRIER',          434537, 'Towncrier'
