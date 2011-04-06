@@ -70,6 +70,7 @@ class Meme
   advice_dog 'I_DONT_ALWAYS',      38926,  'The-Most-Interesting-Man-in-the-World'
   advice_dog 'I_WOLF',             926,    'Insanity-Wolf'
   advice_dog 'J_DUCREUX',          1356,   'Joseph-Ducreux'
+  advice_dog 'KANYE',              622033, 'Kanye'
   advice_dog 'KEANU',              47718,  'Keanu-reeves'
   advice_dog 'MINECRAFT',          122309, 'Minecraft'
   advice_dog 'MORE_BEAR',          33675,  'More-Bear'
