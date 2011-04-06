@@ -1,3 +1,9 @@
+NOTE:
+
+To ease the addition of new memes, use this handy bookmarklet:
+
+http://bookmarklets.heroku.com/bookmarklets/1814
+
 = meme_generator
 
 * http://github.com/drbrain/meme
