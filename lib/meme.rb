@@ -125,14 +125,23 @@ class Meme
       exit
     end
 
+    text_only = if generator == '--text'
+      generator = ARGV.shift
+      true
+    else
+      false
+    end
+
+    # puts "text_only:#{text_only} generator:#{generator}"
+
     abort "#{$0} [GENERATOR|--list] LINE [ADDITONAL_LINES]" if ARGV.empty?
 
     meme = new generator
     link = meme.generate *ARGV
 
-    meme.paste link
+    meme.paste(link) unless text_only
 
-    if $stdout.tty?
+    if $stdout.tty? || text_only
       puts link
     else
       puts meme.fetch link

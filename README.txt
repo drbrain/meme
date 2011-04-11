@@ -18,6 +18,10 @@ Generate a Y U NO meme:
 
   $ meme Y_U_NO 'write tests?'
 
+Generate a Y U NO meme url only, no clipboard or pulling of the image data:
+
+  $ meme --text Y_U_NO 'write tests?'
+
 See a list of available generators
 
   $ meme --list
