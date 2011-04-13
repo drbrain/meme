@@ -5,9 +5,18 @@
     Nakajima
   * Added a --text flag to skip pasting the URL.  Pull Request #32 by Michael
     Deering.
-  * Added yoda.  Pull Request #30 by Dean Strelau.
-  * Added more bear.  Pull Request #29 by Matt Griffin.
+  * Added Arnold.  Commit by Brandon Keene.
+  * Added Ask Cathy.  Commit by Pat Nakajima.
+  * Added Beiber.  Commit by Brandon Keene.
+  * Added Charlie Sheen.  Commit by Pat Nakajima.
+  * Added Chill Out Lemur.  Commit by Brandon Keene.
+  * Added Kanye.  Commit by Pat Nakajima.
+  * Added Kim Jong Il.  Commit by Brandon Keene.
+  * Added Milhouse.  Commit by Pat Nakajima.
+  * Added More Bear.  Pull Request #29 by Matt Griffin.
+  * Added Red Shirt Guy.  Commit by Brandon Keene.
   * Added Sassy Spillman.  Commit by Brandon Keene.
+  * Added Yoda.  Pull Request #30 by Dean Strelau.
 
 * Bug Fix
   * Fixed Serious Fish.  Pull Request #31 by Will Farrington.
