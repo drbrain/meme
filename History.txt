@@ -1,3 +1,18 @@
+=== 1.10 / 2010-04-12
+
+* Minor Enhancements
+  * Added link to bookmarklet for retrieving meme values.  Commit by Pat
+    Nakajima
+  * Added a --text flag to skip pasting the URL.  Pull Request #32 by Michael
+    Deering.
+  * Added yoda.  Pull Request #30 by Dean Strelau.
+  * Added more bear.  Pull Request #29 by Matt Griffin.
+  * Added Sassy Spillman.  Commit by Brandon Keene.
+
+* Bug Fix
+  * Fixed Serious Fish.  Pull Request #31 by Will Farrington.
+  * meme is now executable.  Commit by Pat Nakajima.
+
 === 1.9 / 2010-03-28
 
 * Minor Enhancements
