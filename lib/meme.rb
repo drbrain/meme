@@ -152,7 +152,7 @@ class Meme
     abort "#{$0} [GENERATOR|--list] LINE [ADDITONAL_LINES]" if ARGV.empty?
 
     meme = new generator
-    link = meme.generate *ARGV
+    link = meme.generate(*ARGV)
 
     meme.paste(link) unless text_only
 
