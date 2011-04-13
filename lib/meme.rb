@@ -167,6 +167,7 @@ class Meme
   rescue SystemExit
     raise
   rescue Exception => e
+    puts e.backtrace.join "\n\t" if $DEBUG
     abort "ERROR: #{e.message} (#{e.class})"
   end
 
@@ -216,8 +217,12 @@ class Meme
       res = http.request get
     end
 
-    doc = Nokogiri.HTML res.body
-    doc.css("a[href=\"#{location}\"] img").first['src']
+    if Net::HTTPSuccess === res then
+      doc = Nokogiri.HTML res.body
+      doc.css("a[href=\"#{location}\"] img").first['src']
+    else
+      raise Error, "memegenerator.net appears to be down, got #{res.code}"
+    end
   end
 
   def fetch link
