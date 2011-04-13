@@ -77,6 +77,7 @@ class Meme
   advice_dog 'OBAMA',              1332,   'Obama-'
   advice_dog 'PHILOSORAPTOR',      984,    'Philosoraptor'
   advice_dog 'P_OAK',              24321,  'Professor-Oak'
+  advice_dog 'R_BLACK',            574812, 'Rebecca-Black-Meme'
   advice_dog 'SCUMBAG',            364688, 'Scumbag-Steve'
   advice_dog 'SERIOUS_FISH',       7054219,'Serious-fish-spongebob'
   advice_dog 'SNOB',               2994,   'Snob'
@@ -245,4 +246,3 @@ class Meme
   end
 
 end
-
