@@ -86,6 +86,7 @@ class Meme
   advice_dog 'R_BLACK',            547955, 'Rebecca-Black-Meme'
   advice_dog 'SCUMBAG',            364688, 'Scumbag-Steve'
   advice_dog 'SERIOUS_FISH',       7054219,'Serious-fish-spongebob'
+  advice_dog 'SHEEN',              488762, 'Charlie-Sheen'
   advice_dog 'SNOB',               2994,   'Snob'
   advice_dog 'SPARTA',             1013,   'sparta'
   advice_dog 'SPIDERMAN',          1037,   'Question-Spiderman'
